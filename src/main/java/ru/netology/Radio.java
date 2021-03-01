@@ -4,9 +4,27 @@ public class Radio {
     private int minChannel = 0;
     private int maxChannel = 9;
     private int minVolume = 0;
-    private int maxVolume = 10;
+    private int maxVolume = 100;
     private int currentChannel;
     private int currentVolume;
+
+    public Radio(int minChannel, int maxChannel, int minVolume, int maxVolume, int currentChannel, int currentVolume) {
+        this.minChannel = minChannel;
+        this.maxChannel = maxChannel;
+        this.minVolume = minVolume;
+        this.maxVolume = maxVolume;
+        this.currentChannel = currentChannel;
+        this.currentVolume = currentVolume;
+    }
+
+    public Radio() {
+
+    }
+
+    public Radio(int currentChannel, int maxChannel) {
+        this.currentChannel = currentChannel;
+        this.maxChannel = maxChannel;
+    }
 
     public int getMinChannel() {
         return minChannel;
